@@ -38,7 +38,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://drive.google.com/file/d/1TTlVSAr5711g1BA-z_xwx_B2CvlHnRIA/view?usp=drive_link' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href='https://drive.google.com/file/d/1TTlVSAr5711g1BA-z_xwx_B2CvlHnRIA/view?usp=drive_link'>Video Walkthrough </a>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
