@@ -1,39 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
-body {
-    font-family: 'Cabin';
-    background-color: #758190;
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Cabin', sans-serif;
+    padding: 0;
+    background: #f4f7f6;
+    color: #3a3a3a; 
+    margin-top: 8rem; /* Adjust content below the navbar */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.body{
+    padding: 20px;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #4e8cf0, #68d39d); 
+    padding: 18px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; 
+    width: 99%;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    padding-right: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar li {
+    margin-right: 25px; 
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500; 
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff;
+}
+
 
 #tentacles {
-    width: 50px;
+    width: 80px;
 }
 
-.header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+/* Heading Styles */
+h2, h3{
+    font-family: 'Cabin', sans-serif; 
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: capitalize; 
+}
+
+h2:hover{
+    color: #3498db; 
+}
+
+h2 {
+    font-size: 2.5rem; 
+    color: #68d39d; 
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 2rem; 
+    color: #000;
+    margin-bottom: 16px;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .stats-container {
     display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(72, 163, 224, 0.3); /* Subtle shadow */
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #68d39d; /* Soft pastel blue-grey */
+    color: #fff;
     border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
+    padding: 2%;
+    margin: 2%;
     width: 100%;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+    color: #fff; 
 }
 
 #games-container {
@@ -45,21 +135,22 @@ body {
 .game-img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); 
 }
 
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
+    background-color: #fff;
+    padding: 2%;
+    margin: 2%;
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 25px rgba(38, 194, 129, 0.4); 
 }
 
 #button-container {
@@ -69,7 +160,39 @@ body {
 button {
     font-family: 'Cabin';
     border: none;
-    padding: 1%;
+    padding: 1rem 2rem;
     margin: 1%;
     border-radius: 7px;
+    background-color: #68d39d; 
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: #27ae60; 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 175, 124, 0.5); 
+}
+
+
+#search-bar {
+    font-family: 'Cabin', sans-serif;
+    padding: 0.75rem;
+    margin: 1rem;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 7px;
+    border: 1px solid #dcdcdc;
+    background-color: #fafafa; 
+}
+
+#search-bar:focus {
+    border-color: #3498db; 
+}
+
+
